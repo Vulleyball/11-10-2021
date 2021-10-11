@@ -4,8 +4,8 @@
     "text": "Body mass index in 2015",
     "fontSize": 20,
     "font": "Roboto"},
-  "width": 500,
-  "height": 280,
+  "width": 480,
+  "height": 300,
   "data": {
       "url": "https://raw.githubusercontent.com/Vulleyball/data_1/main/final_map.json",
       "format": {
@@ -80,5 +80,21 @@
       ]
   }
   }
-]
+],"config": {
+  "title": {
+      "font": "sans-serif",
+      "fontSize": 14,
+      "offset": 15
+  },
+  "legend": {
+
+      "title": null,
+      "orient": "right",
+      "layout": {
+          "right": {
+              "anchor": "middle"
+          }
+      }
+  }
+}
 }

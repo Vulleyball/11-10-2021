@@ -4,8 +4,8 @@
     "data": {
         "url": "https://raw.githubusercontent.com/Vulleyball/assignment_test/main/cancer_new2.csv"
     },
-    "height": 350,
-    "width": 510,
+    "height": 250,
+    "width": 485,
     "mark": "bar",
     "encoding": {
         "x": {

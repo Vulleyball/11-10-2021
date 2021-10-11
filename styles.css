@@ -30,7 +30,7 @@
 }
 
 .page {
-    width: relative;
+    width: 1350;
 	height: auto;
     background-color: white;
     margin: auto;
@@ -62,7 +62,7 @@
 	line-height: 2em;
 }
 .adjust_line_height {
-	line-height: 2.5em;
+	line-height: 3em;
 }
 .heading_container p {
   margin-top: 10px;

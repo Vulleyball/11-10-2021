@@ -109,7 +109,7 @@
                     "height": 150,
 
                     "title": {
-                        "text": "Use this average incidence chart to filter"
+                        "text": "Kidney cancer cases per 100K people"
                     },
                     "layer": [{
                             "mark": "line",
@@ -130,9 +130,10 @@
                                     "field": "Year",
                                     "timeUnit": "year",
                                     "axis": {
-                                        "title": "",
+                                        "title": "Use this line chart to filter",
                                         "format": "%Y"
                                     }
+                                    
                                 },
                                 "y": {
                                     "field": "Cancer",
@@ -142,9 +143,16 @@
                                     },
                                     "title": null,
                                     "scale": {
-                                        "type": "symlog"
+                                        "type": "log"
                                     }
                                 },
+                                "tooltip": [
+                                    {"field": "Continent"},
+                                    {"field": "Year", "timeUnit": "year","format": "%Y",
+                                    "title": "Year"},
+                                    {"field": "Cancer", "aggregate": "mean", "format": ".2f",
+                                    "title": "Average incidence"}
+                                ],
                                 "color": {
                                     "field": "Continent",
                                     "type": "nominal",
@@ -185,7 +193,7 @@
                                     "filter": "datum.ranking == 1"
                                 },
                                 {
-                                    "calculate": "'*Asia has higher cases since'",
+                                    "calculate": "'*Technology helps'",
                                     "as": "text_annotation2"
                                 }
                             ],
@@ -193,8 +201,8 @@
                                 "point": "transparent",
                                 "type": "text",
                                 "align": "left",
-                                "dx": -30,
-                                "dy": 40,
+                                "dx": 26,
+                                "dy": 30,
                                 "fontSize": 12,
                                 "fontStyle": "italic",
                                 "color": "teal"
@@ -220,7 +228,7 @@
                                     "filter": "datum.ranking == 1"
                                 },
                                 {
-                                    "calculate": "'they have bigger population'",
+                                    "calculate": "' detecting more cases'",
                                     "as": "text_annotation3"
                                 }
                             ],
@@ -228,7 +236,7 @@
                                 "point": "transparent",
                                 "type": "text",
                                 "align": "left",
-                                "dx": -30,
+                                "dx": 10,
                                 "dy": 60,
                                 "fontSize": 12,
                                 "fontStyle": "italic",
@@ -245,10 +253,12 @@
                 {
                     "width": 250,
                     "height": 150,
-                    "title": "Average incidence of getting lung cancer",
+                    "title": "Lung cancer incidence rate",
                     "layer": [{
                         "mark": "bar",
-                        "transform": [{
+                        "transform": [
+                            {"calculate": "datum.Lung/10000000","as": "Lung"},
+                            {
                             "filter": {
                                 "param": "time_brush"
                             }
@@ -265,6 +275,10 @@
                                 "aggregate": "mean",
                                 "title":null
                             },
+                            "tooltip": [
+                                {"field": "Continent"},
+                                {"field": "Lung", "title": "Average incidence"}
+                            ],
                             "color": {
                                 "field": "Continent",
                                 "type": "nominal",

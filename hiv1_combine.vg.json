@@ -7,7 +7,7 @@
     "repeat": ["Under5s", "5_to_14", "15_to_49", "50_to_69"],
     "columns": 2,
     "spec": {
-        "width": 230,
+        "width": 210,
         "height": 150,
         "mark": {
             "type": "line",
