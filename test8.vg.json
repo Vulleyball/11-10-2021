@@ -26,11 +26,11 @@
                     }
                 },
                 {
-                    "transform": [{
-                        "filter": {
+                    "transform": [
+                        {"filter": {
                             "param": "time_brush"
-                        }
-                    }],
+                        }}
+                    ],
                     "encoding": {
                         "longitude": {
                             "field": "Longitude",
@@ -67,7 +67,8 @@
                             }
                         },
                         {
-                            "transform": [{
+                            "transform": [
+                                {
                                     "window": [{
                                         "op": "rank",
                                         "as": "ranking"

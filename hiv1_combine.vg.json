@@ -1,14 +1,49 @@
+
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {
         "url": "https://raw.githubusercontent.com/Vulleyball/assignment_test/main/new_data2.csv"
     },
-    "title": "Average incidence per 1000 people among different age groups",
+
+    "title": {"text": "Average HIV incidence per 100000 people among different age groups",
+                "orient": "top", "anchor": "middle", "offset": 10},
+    "params": [
+      {
+        "name": "Continent_selection",
+        "bind": {
+          "input": "select",
+          "options": [
+            null,
+            "North America",
+            "South America",
+            "Europe",
+            "Africa",
+            "Asia",
+            "Oceania"
+          ],
+          "labels": [
+            "Show All",
+            "North America",
+            "South America",
+            "Europe",
+            "Africa",
+            "Asia",
+            "Oceania"
+          ],
+          "name": "Continent Selection: "
+  
+        }
+      }
+    ],
+    "transform": [{
+        "filter": "Continent_selection == null || datum.Continent == Continent_selection"
+      }],
+
     "repeat": ["Under5s", "5_to_14", "15_to_49", "50_to_69"],
     "columns": 2,
     "spec": {
         "width": 210,
-        "height": 150,
+        "height": 120,
         "mark": {
             "type": "line",
             "point": {
@@ -16,7 +51,6 @@
                 "fill": "white"
             }
         },
-
         "encoding": {
             "x": {
                 "field": "Year",
@@ -67,24 +101,22 @@
                 }
             ]
         }
-            
-        
     },
 
     "config": {
         "title": {
             "font": "sans-serif",
             "fontSize": 14,
-            "align": "center"
+            "padding-top": 100
         },
         "legend": {
-            "orient": "bottom",
             "title": null,
-            "layout": {
-                "bottom": {
-                    "anchor": "center"
-                }
-            }
-        }
+            "orient": "bottom",
+            "columnPadding": 28
+        },
+        "params":
+            [{"name": "Continent_selection"}
+                
+            ]
     }
 }

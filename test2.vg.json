@@ -309,5 +309,14 @@
         }
       }
     }
-  ]
+  ],"config": {
+    "title": {
+        "font": "sans-serif",
+        "fontSize": 17,
+        "offset": 15
+    },
+    "legend": {
+      "rowPadding": 12
+    }
+  }
 }
