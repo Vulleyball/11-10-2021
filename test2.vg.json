@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Life expectancy vs GDP per capita",
+  "title": "Life expectancy (x) vs GDP per capita in USD (y)",
   
-  "width": 480,
+  "width": 390,
   "height": 350,
   "data": {
     "url": "https://raw.githubusercontent.com/Vulleyball/Vulleyball_3179/main/new_data2.csv"
@@ -84,9 +84,9 @@
     "x": {
       "field": "Life expectancy",
       "type": "quantitative",
-      "title": "Average life expectancy",
+      "title": null,
       "axis": {
-        "tickCount": 5
+        "tickCount": 6
       },
       "scale": {
         "type": "symlog",
@@ -96,9 +96,11 @@
     "y": {
       "field": "Average_GDP",
       "type": "quantitative",
-      "title": "Average GDP in USD",
+
+      "title": null,
       "axis": {
-        "tickCount": 4
+        "tickCount": 4,
+        "format": "~s"
       },
       "scale": {
         "type": "log",
@@ -297,7 +299,7 @@
         "point": "transparent",
         "type": "text",
         "align": "left",
-        "dx": -380,
+        "dx": -280,
         "dy": -20,
         "fontSize": 14,
         "fontStyle": "italic",

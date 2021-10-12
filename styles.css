@@ -26,12 +26,12 @@
 } */
 
 #chart1 {
-	width: 1220px;
+	width: 1060px;
 }
 
 .page {
-    width: 1350px;
-	height: auto;
+    width: 1230px;
+	height: 2950px;
     background-color: white;
     margin: auto;
     padding: 50px;
@@ -205,4 +205,10 @@
 
 .client_section ol.carousel-indicators li.active {
   background-color: #002c3e;
+}
+
+.footer_section{
+	vertical-align: baseline;
+	width: fit-content;
+	padding-left: 390px;
 }

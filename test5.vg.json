@@ -4,8 +4,9 @@
     "data": {
         "url": "https://raw.githubusercontent.com/Vulleyball/assignment_test/main/cancer_new2.csv"
     },
-    "height": 250,
-    "width": 425,
+    "title":"Air-related deaths over the years",
+    "height": 300,
+    "width": 420,
     "mark": "bar",
     "encoding": {
         "x": {

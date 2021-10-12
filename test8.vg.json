@@ -4,7 +4,7 @@
         "url": "https://raw.githubusercontent.com/Vulleyball/Vulleyball_3179/main/cancer_new2.csv"
     },
     "vconcat": [{
-            "width": 590,
+            "width": 470,
             "height": 250,
             "title": "Breast cancer deaths over the years",
             "projection": {
@@ -106,7 +106,7 @@
         },
         {
             "hconcat": [{
-                    "width": 245,
+                    "width": 190,
                     "height": 150,
 
                     "title": {
@@ -202,9 +202,9 @@
                                 "point": "transparent",
                                 "type": "text",
                                 "align": "left",
-                                "dx": 26,
+                                "dx": 14,
                                 "dy": 30,
-                                "fontSize": 12,
+                                "fontSize": 9,
                                 "fontStyle": "italic",
                                 "color": "teal"
                             },
@@ -237,9 +237,9 @@
                                 "point": "transparent",
                                 "type": "text",
                                 "align": "left",
-                                "dx": 10,
+                                "dx": 6,
                                 "dy": 60,
-                                "fontSize": 12,
+                                "fontSize": 9,
                                 "fontStyle": "italic",
                                 "color": "teal"
                             },
@@ -252,7 +252,7 @@
                     ]
                 },
                 {
-                    "width": 250,
+                    "width": 185,
                     "height": 150,
                     "title": "Lung cancer incidence rate",
                     "layer": [{
@@ -327,9 +327,9 @@
                             "point": "transparent",
                             "type": "text",
                             "align": "left",
-                            "dx": -50,
-                            "dy": 35,
-                            "fontSize": 12,
+                            "dx": -40,
+                            "dy": 39,
+                            "fontSize": 9,
                             "fontStyle": "italic",
                             "color": "teal"
                         },
@@ -361,9 +361,9 @@
                             "point": "transparent",
                             "type": "text",
                             "align": "left",
-                            "dx": -50,
-                            "dy": 55,
-                            "fontSize": 12,
+                            "dx": -40,
+                            "dy": 59,
+                            "fontSize": 9,
                             "fontStyle": "italic",
                             "color": "teal"
                         },
@@ -380,7 +380,7 @@
     "config": {
         "title": {
             "font": "sans-serif",
-            "fontSize": 14,
+            "fontSize": 11,
             "offset": 15
         },
         "legend": {
