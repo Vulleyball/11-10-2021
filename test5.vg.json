@@ -5,7 +5,7 @@
         "url": "https://raw.githubusercontent.com/Vulleyball/assignment_test/main/cancer_new2.csv"
     },
     "height": 250,
-    "width": 485,
+    "width": 425,
     "mark": "bar",
     "encoding": {
         "x": {
@@ -13,7 +13,8 @@
         },
         "y": {
             "field": "Air_deaths",
-            "aggregate": "sum"
+            "aggregate": "sum",
+            "title": "Air-related deaths"
             
             
         },

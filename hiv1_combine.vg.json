@@ -5,7 +5,7 @@
         "url": "https://raw.githubusercontent.com/Vulleyball/assignment_test/main/new_data2.csv"
     },
 
-    "title": {"text": "Average HIV incidence per 100000 people among different age groups",
+    "title": {"text": "Average HIV incidence per 100000",
                 "orient": "top", "anchor": "middle", "offset": 10},
     "params": [
       {
@@ -42,7 +42,7 @@
     "repeat": ["Under5s", "5_to_14", "15_to_49", "50_to_69"],
     "columns": 2,
     "spec": {
-        "width": 210,
+        "width": 181,
         "height": 120,
         "mark": {
             "type": "line",
@@ -112,7 +112,7 @@
         "legend": {
             "title": null,
             "orient": "bottom",
-            "columnPadding": 28
+            "columnPadding": 10
         },
         "params":
             [{"name": "Continent_selection"}

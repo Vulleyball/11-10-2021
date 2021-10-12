@@ -4,7 +4,7 @@
         "url": "https://raw.githubusercontent.com/Vulleyball/Vulleyball_3179/main/cancer_new2.csv"
     },
     "vconcat": [{
-            "width": 600,
+            "width": 590,
             "height": 250,
             "title": "Breast cancer deaths over the years",
             "projection": {
@@ -106,7 +106,7 @@
         },
         {
             "hconcat": [{
-                    "width": 250,
+                    "width": 245,
                     "height": 150,
 
                     "title": {
